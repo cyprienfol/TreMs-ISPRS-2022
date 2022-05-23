@@ -1,200 +1,104 @@
 {
-	type: 'Potree',
-	version: 1.7,
-	settings: {
-		pointBudget: 3000000,
-		fov: 60,
-		edlEnabled: true,
-		edlRadius: 1.4,
-		edlStrength: 0.4,
-		background: 'black',
-		minNodeSize: 0,
-		showBoundingBoxes: false,
+	"version": "2.0",
+	"name": "Hornbeam_Azure",
+	"description": "",
+	"points": 1711058,
+	"projection": "",
+	"hierarchy": {
+		"firstChunkSize": 9152, 
+		"stepSize": 4, 
+		"depth": 5
 	},
-	view: {
-		position: [
-			2676524.227153972,
-			1246178.469770168,
-			1.8098975959563928,
-		],
-		target: [
-			2676528.5136585236,
-			1246181.2873706818,
-			1.7075223922729426,
-		],
+	"offset": [2676526.9085683823, 1246179.6822805405, 0.1024322509765625],
+	"scale": [1e-08, 1e-08, 1e-08],
+	"spacing": 0.025079533457756042,
+	"boundingBox": {
+		"min": [2676526.9085683823, 1246179.6822805405, 0.1024322509765625], 
+		"max": [2676530.1187486649, 1246182.8924608231, 3.3126125335693359]
 	},
-	classification: {
-		'0': {
-			visible: true,
-			name: 'never classified',
-			color: [
-				0.5,
-				0.5,
-				0.5,
-				1,
-			],
-		},
-		'1': {
-			visible: true,
-			name: 'unclassified',
-			color: [
-				0.5,
-				0.5,
-				0.5,
-				1,
-			],
-		},
-		'2': {
-			visible: true,
-			name: 'ground',
-			color: [
-				0.63,
-				0.32,
-				0.18,
-				1,
-			],
-		},
-		'3': {
-			visible: true,
-			name: 'low vegetation',
-			color: [
-				0,
-				1,
-				0,
-				1,
-			],
-		},
-		'4': {
-			visible: true,
-			name: 'medium vegetation',
-			color: [
-				0,
-				0.8,
-				0,
-				1,
-			],
-		},
-		'5': {
-			visible: true,
-			name: 'high vegetation',
-			color: [
-				0,
-				0.6,
-				0,
-				1,
-			],
-		},
-		'6': {
-			visible: true,
-			name: 'building',
-			color: [
-				1,
-				0.66,
-				0,
-				1,
-			],
-		},
-		'7': {
-			visible: true,
-			name: 'low point(noise)',
-			color: [
-				1,
-				0,
-				1,
-				1,
-			],
-		},
-		'8': {
-			visible: true,
-			name: 'key-point',
-			color: [
-				1,
-				0,
-				0,
-				1,
-			],
-		},
-		'9': {
-			visible: true,
-			name: 'water',
-			color: [
-				0,
-				0,
-				1,
-				1,
-			],
-		},
-		'12': {
-			visible: true,
-			name: 'overlap',
-			color: [
-				1,
-				1,
-				0,
-				1,
-			],
-		},
-		DEFAULT: {
-			visible: true,
-			name: 'default',
-			color: [
-				0.3,
-				0.6,
-				0.6,
-				0.5,
-			],
-		},
-	},
-	pointclouds: [
+	"encoding": "DEFAULT",
+	"attributes": [
 		{
-			name: 'Hornbeam_Azure_converted',
-			url: 'C:\\Users\\cfol\\Documents\\PhD\\ISPRS\\CloudCompare\\Hornbeam/Hornbeam_Azure_converted/metadata.json',
-			position: [
-				2676526.9085683823,
-				1246179.6822805405,
-				0.1024322509765625,
-			],
-			rotation: [
-				0,
-				0,
-				0,
-				'XYZ',
-			],
-			scale: [
-				1,
-				1,
-				1,
-			],
-			material: {
-				activeAttributeName: 'rgba',
-				ranges: [
-					{
-						name: 'elevationRange',
-						value: [
-							0.10243224999999999,
-							3.31261253,
-						],
-					},
-					{
-						name: 'intensityRange',
-						value: [
-							0,
-							0,
-						],
-					},
-				],
-				size: 1,
-				minSize: 2,
-				pointSizeType: 'ADAPTIVE',
-				matcap: 'matcap.jpg',
-			},
-		},
-	],
-	measurements: [],
-	volumes: [],
-	cameraAnimations: [],
-	profiles: [],
-	annotations: [],
-	orientedImages: [],
-	geopackages: [],
+			"name": "position",
+			"description": "",
+			"size": 12,
+			"numElements": 3,
+			"elementSize": 4,
+			"type": "int32",
+			"min": [2676526.9085683799, 1246179.68228054, 0.10243224999999999],
+			"max": [2676528.9670534101, 1246181.45896816, 3.31261253]
+		},{
+			"name": "intensity",
+			"description": "",
+			"size": 2,
+			"numElements": 1,
+			"elementSize": 2,
+			"type": "uint16",
+			"min": [0],
+			"max": [0]
+		},{
+			"name": "return number",
+			"description": "",
+			"size": 1,
+			"numElements": 1,
+			"elementSize": 1,
+			"type": "uint8",
+			"min": [1],
+			"max": [1]
+		},{
+			"name": "number of returns",
+			"description": "",
+			"size": 1,
+			"numElements": 1,
+			"elementSize": 1,
+			"type": "uint8",
+			"min": [1],
+			"max": [1]
+		},{
+			"name": "classification",
+			"description": "",
+			"size": 1,
+			"numElements": 1,
+			"elementSize": 1,
+			"type": "uint8",
+			"min": [0],
+			"max": [0]
+		},{
+			"name": "scan angle rank",
+			"description": "",
+			"size": 1,
+			"numElements": 1,
+			"elementSize": 1,
+			"type": "uint8",
+			"min": [0],
+			"max": [0]
+		},{
+			"name": "user data",
+			"description": "",
+			"size": 1,
+			"numElements": 1,
+			"elementSize": 1,
+			"type": "uint8",
+			"min": [0],
+			"max": [0]
+		},{
+			"name": "point source id",
+			"description": "",
+			"size": 2,
+			"numElements": 1,
+			"elementSize": 2,
+			"type": "uint16",
+			"min": [0],
+			"max": [0]
+		},{
+			"name": "rgb",
+			"description": "",
+			"size": 6,
+			"numElements": 3,
+			"elementSize": 2,
+			"type": "uint16",
+			"min": [256, 512, 1280],
+			"max": [64256, 65280, 65280]
+		}
+	]
 }
